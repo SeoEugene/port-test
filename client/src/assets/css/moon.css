@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "MonumentExtended-Ultrabold";
+    src: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/MonumentExtended-Ultrabold.woff") format("woff"), url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/61488/MonumentExtended-Ultrabold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    /* display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden; */
+}
+
+.container1_1 {
+    position: relative;
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    position: relative;
+    max-width: 30vw;
+    max-height: 30vw;
+    min-width: 30vw;
+    min-height: 30vw;
+    background: black;
+    cursor: pointer;
+    visibility: hidden;
+}
+
+/* .circle1-1-1 {
+    transition: width 0.3s ease, height 0.3s ease;
+} */
+
+.container1_1 .container__base {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background: #D5CEC6;
+}
+
+.container1_1 .moon {
+    position: relative;
+    z-index: 2;
+    width: 30vw;
+    height: 30vw;
+}
+
+.container1_1 .moon__svg {
+    width: 30vw;
+    height: 30vw;
+}
+
+.container1_1 .moon__txt {
+    font-family: "MonumentExtended-Ultrabold", sans-serif;
+    font-size: 60px;
+    line-height: 1;
+    fill: black;
+    letter-spacing: 2.1px;
+}
+
+.container1_1 .moon__txt-overlay {
+    fill: rgba(0, 0, 0, 1);
+}

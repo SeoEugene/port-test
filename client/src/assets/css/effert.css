@@ -1,0 +1,245 @@
+.alleffert__wrap {
+    width: 100%;
+    height: 100%;
+    background-color: #F2F0E7;
+    /* margin: 0 10px; */
+    /* margin-top: 30px; */
+    overflow-y: scroll;
+    box-sizing: border-box;
+    padding: 4.5vw;
+}
+
+.alleffert__wrap::-webkit-scrollbar {
+    width: 0px;
+}
+
+.alleffert__wrap h1 {
+    text-align: center;
+    font-family: "PartizenoRegular";
+    font-size: 50px;
+    /* font-weight: 600; */
+    margin-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000;
+
+}
+
+.alleffert__wrap .page {
+    display: flex;
+    border-bottom: 1px solid #000;
+    padding: 50px 10px;
+}
+
+.alleffert__wrap .page .left {
+    width: 40%;
+}
+
+.alleffert__wrap .page .left .image {
+    width: 80%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+}
+
+.alleffert__wrap .left .image1 {
+    background-image: url(../../../public/image/search.png);
+}
+
+.alleffert__wrap .left .image2 {
+    background-image: url(../../../public/image/search.png);
+}
+
+.alleffert__wrap .left .image3 {
+    background-image: url(../../../public/image/data.png);
+}
+
+.alleffert__wrap .left .image4 {
+    background-image: url(../../../public/image/join.png);
+}
+
+.alleffert__wrap .left .image5 {
+    background-image: url(../../../public/image/board.png);
+}
+
+.alleffert__wrap .left .image6 {
+    background-image: url(../../../public/image/comment.png);
+}
+
+.alleffert__wrap .page .right {
+    width: 60%;
+}
+
+.alleffert__wrap .page .right .title {
+    font-family: "PartizenoRegular";
+    font-size: 30px
+}
+
+.alleffert__wrap .page .right .desc {}
+
+/* effert more */
+.effert__wrap {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+}
+
+.effert__wrap::-webkit-scrollbar {
+    width: 0px;
+}
+
+.effert__wrap .contents {
+    /* width: calc(100%-40px); */
+    margin: 0 60px;
+    margin-top: 50px;
+    margin-left: 61px;
+    display: flex;
+    z-index: 9960;
+}
+
+.effert__wrap .contents li {
+    /* width: 200px; */
+    padding: 10px 20px;
+    border: 1px solid #000;
+    background-color: #F2F0E7;
+    text-align: center;
+    font-family: "PartizenoRegular";
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.effert__wrap .contents li.active {
+    border-bottom: none;
+}
+
+
+.effert__wrap .file {
+    width: calc(100%-40px);
+    padding: 40px;
+    margin: -1px 60px 60px 60px;
+    border: 1px solid #000;
+    background-color: #F2F0E7;
+    z-index: 9950;
+    box-sizing: border-box;
+}
+
+.effert__wrap .file h1 {
+    width: 100%;
+    border-bottom: 1px solid #000;
+    font-family: "PartizenoRegular";
+    padding: 0 20px;
+}
+
+.effert__wrap .file h1 span {
+    font-family: 'Cara';
+}
+
+@media (max-width:1000px) {
+    .effert__wrap .file .title {
+        font-size: 3vw;
+    }
+}
+
+.effert__wrap .file .title span {
+    font-family: 'Cara';
+}
+
+.effert__wrap .file .card {
+    display: flex;
+    margin-top: 20px;
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+}
+
+.effert__wrap .file .card1 {
+    width: 40%;
+    /* margin: 20px; */
+    margin-bottom: 20px;
+    padding: 20px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    position: relative;
+    box-sizing: border-box;
+}
+
+.effert__wrap .file .card2 {
+    width: 60%;
+    padding: 20px;
+    border-left: 1px solid #000;
+    margin-bottom: 20px;
+    /* position: relative; */
+}
+
+.effert__wrap .file .card2 span {
+    font-family: 'Cara';
+
+}
+
+.effert__wrap .file .card2 h3 {
+    font-family: "PartizenoRegular";
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 25px;
+}
+
+.effert__wrap .file .card2 .desc {
+    padding: 5px;
+    font-family: 'IropkeBatang';
+    line-height: 1.8;
+}
+
+
+.effert__wrap .file .card2 .stack {
+    display: flex;
+}
+
+.effert__wrap .file .card2 .stack span img {
+    padding-left: 5px;
+
+}
+
+.effert__wrap .file .card2 .btn {
+    text-align: center;
+    font-family: 'IropkeBatang';
+    margin-top: 5%;
+}
+
+.effert__wrap .file .card2 .btn a {
+    border: 1px double #000;
+    padding: 10px 40px;
+    display: inline-block;
+    background-color: #000;
+    color: #F2F0E7;
+    font-family: 'IropkeBatang';
+    cursor: pointer;
+}
+
+@media (max-width:1600px) {
+    .effert__wrap .file .card {
+        display: block;
+    }
+
+    .effert__wrap .file .card1 {
+        width: 100%;
+        padding: 0;
+    }
+
+    .effert__wrap .file .card2 {
+        width: 100%;
+        border-left: none;
+        border-top: 1px solid #000;
+    }
+}
